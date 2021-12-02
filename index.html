@@ -71,6 +71,19 @@
                             function_name() // function invocation
                         </div>
 
+                        <h4 class="mt-5">Positional parameters in Typescript Function</h4>
+                        <p>Parameters can have a specified type by using the syntax <i>param_name: type</i></p>
+                        <p>Parameters without a specified type are considered of type <i>any</i></p>
+                        <p>Parameters can be made optional with '?' by using the syntax <i>param_name?: type</i></p>
+                        <p>Parameters can be given a default value with '=' just like in regular JS functions.
+                            <i>Note that a parameter can't be optional and have a default value</i></p>
+                        <div class="alert alert-info" role="alert">
+                            function  function_name(p1: string = "hello", p2?: number) {   <br>
+                                console.log(p1);                                <br>
+                                console.log(p2);                                <br>
+                            }                                                   
+                        </div>
+
                         <h4 class="mt-5">Typescript Function Type Expressions</h4>
                         <div class="alert alert-info" role="alert">
 
