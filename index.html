@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
+    
+    <link href="styles.css" rel="stylesheet" />
+    <title>Tennis Stars' Tutorials</title>
+</head>
+<body>
+
+    <!-- BG Graphic -->
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="svg position-absolute d-none d-lg-block" style="height: 690px; width: 100%; z-index: -10">
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="hsl(216, 55%, 95.1%)" offset="0%"></stop>
+            <stop stop-color="hsl(216, 55%, 85.1%)" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path fill="url(#sw-gradient-0)" d="M 0.351 264.418 C 0.351 264.418 33.396 268.165 47.112 270.128 C 265.033 301.319 477.487 325.608 614.827 237.124 C 713.575 173.504 692.613 144.116 805.776 87.876 C 942.649 19.853 1317.845 20.149 1440.003 23.965 C 1466.069 24.779 1440.135 24.024 1440.135 24.024 L 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L 0.351 264.418 Z"></path>
+      </svg>
+
+    <!-- Header -->
+    <nav id="mdb-navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-2">
+        <div class="container-fluid ">
+            
+            <a class="navbar-brand me-2" href="#">
+                A Tennis Star Tutorial
+            </a>
+
+           <!-- Pills navs -->
+            <ul class="nav nav-pills" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="#ex1-pills-1">
+                        Functions
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="pill" href="#ex1-pills-2">
+                        Function Overload
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="#ex1-pills-3">
+                        Modules & Namespaces
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Pills content -->
+            <div class="tab-content" id="ex1-content">
+                <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                    <h2 class="mb-4">Typescript Functions</h2>
+                    <div class="bg-white border rounded-5 p-4">
+                        <p>A function is a set of statements to perform a specific task. Functions organize the program into logical blocks of code.</p>
+                        <h4 class="mt-5">Basic JS Function Declaration</h4>
+                        <div class="alert alert-info" role="alert">
+                            function  function_name( ) { } // function definition
+                            function_name() // function invocation
+                        </div>
+
+                        <h4 class="mt-5">Typescript Function Type Expressions</h4>
+                        <div class="alert alert-info" role="alert">
+
+                            //define function type                      <br>
+                            type GreetFunction = (a: string) => void;   <br><br>
+
+                            //implement function of type GreetFunction  <br>
+                            function printToConsole(s: string) {        <br>
+                                console.log(s);                         <br>
+                            }                                           <br><br>
+
+                            //implement function that gets a parameter of type GreetFunction    <br>
+                            function greeter(fn: GreetFunction) {       <br>
+                                fn("Hello, World");                     <br>
+                            }                                           <br><br>
+                            
+                            //invoke function greeter                   <br>
+                            greeter(printToConsole);                    
+                        </div>
+<!--
+                        <h4 class="mt-5">Basic Function Declaration</h4>
+                        <div class="alert alert-info" role="alert">
+                            function  function_name() { 
+                                // function body 
+                            }
+                        </div>
+
+                        <h4 class="mt-5">Basic Function Declaration</h4>
+                        <div class="alert alert-info" role="alert">
+                            function  function_name() { 
+                                // function body 
+                            }
+                        </div>
+
+                        <h4 class="mt-5">Basic Function Declaration</h4>
+                        <div class="alert alert-info" role="alert">
+                            function  function_name() { 
+                                // function body 
+                            }
+                        </div>
+-->
+                    </div>
+                    
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                Tab 2 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                Tab 3 content
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+</body>
+</html>

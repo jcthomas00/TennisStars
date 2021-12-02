@@ -1,0 +1,12 @@
+main{
+    padding-top: 90px;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        background: rgba(256, 256, 256, .5);
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+}
