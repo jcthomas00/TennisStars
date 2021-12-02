@@ -67,8 +67,12 @@
                         <p>A function is a set of statements to perform a specific task. Functions organize the program into logical blocks of code.</p>
                         <h4 class="mt-5">Basic JS Function Declaration</h4>
                         <div class="alert alert-info" role="alert">
-                            function  function_name( ) { } // function definition
-                            function_name() // function invocation
+                            <code>
+                                <pre>
+                                    function  function_name( ) { } // function definition
+                                    function_name() // function invocation
+                                </pre>
+                            </code>
                         </div>
 
                         <h4 class="mt-5">Positional parameters in Typescript Function</h4>
@@ -78,30 +82,39 @@
                         <p>Parameters can be given a default value with '=' just like in regular JS functions.
                             <i>Note that a parameter can't be optional and have a default value</i></p>
                         <div class="alert alert-info" role="alert">
-                            function  function_name(p1: string = "hello", p2?: number) {   <br>
-                                console.log(p1);                                <br>
-                                console.log(p2);                                <br>
-                            }                                                   
+                            <code>
+                                <pre>
+                                    function  function_name(p1: string = "hello", p2?: number) {   
+                                        console.log(p1);                                
+                                        console.log(p2);                                
+                                    }  
+                                </pre>
+                            </code>                                            
                         </div>
 
                         <h4 class="mt-5">Typescript Function Type Expressions</h4>
                         <div class="alert alert-info" role="alert">
 
-                            //define function type                      <br>
-                            type GreetFunction = (a: string) => void;   <br><br>
+                            <code>
+                                <pre>
+                                    //define function type                  
+                                    type GreetFunction = (a: string) => void;   
+        
+                                    //implement function of type GreetFuncti
+                                    function printToConsole(s: string) {    
+                                        console.log(s);                     
+                                    }                                           
+        
+                                    //implement function that gets a parameter of type GreetFunction
+                                    function greeter(fn: GreetFunction) {   
+                                        fn("Hello, World");                 
+                                    }                                           
+                                    
+                                    //invoke function greeter               
+                                    greeter(printToConsole);  
 
-                            //implement function of type GreetFunction  <br>
-                            function printToConsole(s: string) {        <br>
-                                console.log(s);                         <br>
-                            }                                           <br><br>
-
-                            //implement function that gets a parameter of type GreetFunction    <br>
-                            function greeter(fn: GreetFunction) {       <br>
-                                fn("Hello, World");                     <br>
-                            }                                           <br><br>
-                            
-                            //invoke function greeter                   <br>
-                            greeter(printToConsole);                    
+                                </pre>
+                            </code>                  
                         </div>
 <!--
                         <h4 class="mt-5">Basic Function Declaration</h4>
@@ -129,7 +142,11 @@
                     
                 </div>
                 <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-                Tab 2 content
+                    <h2 class="mb-4">Typescript Functions</h2>
+                    <div class="bg-white border rounded-5 p-4">
+                        <p>Functions have the capability to operate differently on the basis of the input provided to them. In other words, a program can have multiple methods with the same name with different implementation.</p>
+                        <h4 class="mt-5">Basic JS Function Declaration</h4>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
                 Tab 3 content
