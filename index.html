@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,34 +11,40 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+        integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="styles.css" rel="stylesheet" />
     <title>Tennis Stars' TypeScript Tutorials</title>
 </head>
+
 <body>
 
     <!-- BG Graphic -->
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="svg position-absolute d-none d-lg-block" style="height: 690px; width: 100%; z-index: -10">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
+        class="svg position-absolute d-none d-lg-block" style="height: 690px; width: 100%; z-index: -10">
         <defs>
-          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-            <stop stop-color="hsl(216, 55%, 95.1%)" offset="0%"></stop>
-            <stop stop-color="hsl(216, 55%, 85.1%)" offset="100%"></stop>
-          </linearGradient>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="hsl(216, 55%, 95.1%)" offset="0%"></stop>
+                <stop stop-color="hsl(216, 55%, 85.1%)" offset="100%"></stop>
+            </linearGradient>
         </defs>
-        <path fill="url(#sw-gradient-0)" d="M 0.351 264.418 C 0.351 264.418 33.396 268.165 47.112 270.128 C 265.033 301.319 477.487 325.608 614.827 237.124 C 713.575 173.504 692.613 144.116 805.776 87.876 C 942.649 19.853 1317.845 20.149 1440.003 23.965 C 1466.069 24.779 1440.135 24.024 1440.135 24.024 L 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L 0.351 264.418 Z"></path>
-      </svg>
+        <path fill="url(#sw-gradient-0)"
+            d="M 0.351 264.418 C 0.351 264.418 33.396 268.165 47.112 270.128 C 265.033 301.319 477.487 325.608 614.827 237.124 C 713.575 173.504 692.613 144.116 805.776 87.876 C 942.649 19.853 1317.845 20.149 1440.003 23.965 C 1466.069 24.779 1440.135 24.024 1440.135 24.024 L 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L 0.351 264.418 Z">
+        </path>
+    </svg>
 
     <!-- Header -->
     <nav id="mdb-navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-2">
         <div class="container-fluid ">
-            
+
             <div class="navbar-brand me-2">
                 <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/83180/preview.svg" alt="">
                 Tennis Stars
             </div>
 
-           <!-- Pills navs -->
+            <!-- Pills navs -->
             <ul class="nav nav-pills" id="ex1" role="tablist">
                 <li class="nav-item" role="presentation">
                     <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="#ex1-pills-1">
@@ -67,25 +74,31 @@
                     <h2 class="mb-4">Typescript Functions</h2>
                     <div class="bg-white border rounded-5 p-4">
                         <h4 class="mt-5">Basic JS Function Declaration</h4>
-                        <p>A function is a set of statements to perform a specific task. Functions organize the program into logical blocks of code.</p>
+                        <p>A function is a set of statements to perform a specific task. Functions organize the program
+                            into logical blocks of code.</p>
 
-<pre><code  class="language-javascript">
+                        <pre><code  class="language-javascript">
     function  function_name( ) { } // function definition
     function_name() // function invocation
 </code></pre>
 
                         <h4 class="mt-5">Positional parameters in Typescript Function</h4>
                         <ul>
-                            <li>Parameters can have a specified type by using the syntax: 
-                                <ul><li><code>param_name: type</code></li></ul>
+                            <li>Parameters can have a specified type by using the syntax:
+                                <ul>
+                                    <li><code>param_name: type</code></li>
+                                </ul>
                             </li>
                             <li>Parameters without a specified type are considered of type <em>any</em></li>
-                            <li>Parameters can be made optional with '?' by using the syntax 
-                                <ul><li> <code>param_name?: type</code></li></ul></li>
+                            <li>Parameters can be made optional with '?' by using the syntax
+                                <ul>
+                                    <li> <code>param_name?: type</code></li>
+                                </ul>
+                            </li>
                             <li>Parameters can be given a default value with '=' just like in regular JS functions.</li>
                             <li>Note that a parameter can't be optional and have a default value</li>
                         </ul>
-<pre><code  class="language-javascript">
+                        <pre><code  class="language-javascript">
     function  function_name(p1: string = "hello", p2?: number) {   
         console.log(p1);                                
         console.log(p2);                                
@@ -97,11 +110,13 @@
                             <li>
                                 Function types can be written as a call signature in an object type:
                                 <ul>
-                                    <li>The following code is defining a function type with one parameter, named a (of type string) that doesn’t return anything:
+                                    <li>The following code is defining a function type with one parameter, named a (of
+                                        type string) that doesn’t return anything:
                                     <li><code>type GreetFunction = {(a: string): void;};</code></li>
                                 </ul>
                             </li>
-                            <li>The below code is exactly the same code as above but written in shorthand form (similar to an arrow function):
+                            <li>The below code is exactly the same code as above but written in shorthand form (similar
+                                to an arrow function):
                                 <ul>
                                     <li><code>(a: string) => void</code></li>
                                 </ul>
@@ -114,7 +129,7 @@
                                 </ul>
                             </li>
                         </ul>
-<pre><code  class="language-javascript">
+                        <pre><code  class="language-javascript">
     // define function type  
     type GreetFunction = (a: string) => void;     
 
@@ -135,9 +150,11 @@
                         <h4 class="mt-5">Typescript Function Interfaces</h4>
                         <ul>
                             <li>
-                                Function interfaces are used exactly the same way as types but have a slightly different syntax:
+                                Function interfaces are used exactly the same way as types but have a slightly different
+                                syntax:
                                 <ul>
-                                    <li>The following code shows the same call signature as the type examples above, but as an interface:
+                                    <li>The following code shows the same call signature as the type examples above, but
+                                        as an interface:
                                     <li><code>interface SearchFunc {(a: string): void;}</code></li>
                                 </ul>
                             </li>
@@ -149,26 +166,36 @@
                     <h2 class="mb-4">Overloading Functions in Typescript</h2>
                     <div class="bg-white border rounded-5 p-4">
                         <h4 class="mt-5">What Is Function Overloading?</h4>
-                        <p>Overloaded functions have the capability to operate differently on the basis of the input provided to them. 
-                            In other words, a program can have multiple methods with the same name with different implementation.</p>
+                        <p>Overloaded functions have the capability to operate differently on the basis of the input
+                            provided to them.
+                            In other words, a program can have multiple methods with the same name with different
+                            implementation.</p>
+                            <ul><li>
+                                Remember that "true" function overloading is not possible in JS since only one implementation can exist.
+                            </li>
+                        <li>
+                            Typescript enables a safer way to understand how js can accept different parameters by defining signatures
+                        </li></ul>
                         <h4 class="mt-5">Overloading in Typescript</h4>
                         <ul>
                             <li> A function with multiple call signatures is defined as an overloaded function</li>
                             <li>Steps to overload a function:
                                 <ol>
-                                    <li>Declare multiple functions with the same name but different function signature. The signature can differ in:
+                                    <li>Declare multiple functions with the same name but different function signature.
+                                        The signature can differ in:
                                         <ul>
                                             <li>The data type of the parameter</li>
                                             <li>The number of parameters</li>
                                             <li>The sequence of parameters</li>
                                         </ul>
                                     </li>
-                                    <li>The declaration must be followed by the function definition and it must account for <strong>all of the signatures</strong>.</li>
+                                    <li>The declaration must be followed by the function definition and it must account
+                                        for <strong>all of the signatures</strong>.</li>
                                     <li>Lastly, call the overloaded function</li>
                                 </ol>
                             </li>
                         </ul>
-<pre><code  class="language-javascript">
+                        <pre><code  class="language-javascript">
     //STEP 1
         // Example of function declarations with different data types
         function fn1(string):void; 
@@ -198,8 +225,9 @@
 </code></pre>
 
                         <h4 class="mt-5">Overloading Function Expressions</h4>
-                        Since we can use type declaration to define function's call signature, we can also use it to overload the function by providing multiple signatures in side the definition.  
-<pre><code  class="language-javascript">
+                        Since we can use type declaration to define function's call signature, we can also use it to
+                        overload the function by providing multiple signatures in side the definition.
+                        <pre><code  class="language-javascript">
     // Overloaded function expression
     type Reserve = {
         (from: Date, to: Date, destination: string): void
@@ -222,11 +250,14 @@
 
                         <h4 class="mt-5">Function Overloading Tips</h4>
                         <ul>
-                            <li>The signature of the implementation is not visible from the outside. When writing an overloaded function, you should always have two or more signatures above the implementation of the function.</li>
+                            <li>The signature of the implementation is not visible from the outside. When writing an
+                                overloaded function, you should always have two or more signatures above the
+                                implementation of the function.</li>
                             <li>Always prefer parameters with union types instead of overloads when possible</li>
-                            <li>When using overloads, try to keep your implementation’s signature as specific as possible to make it easier to implement the function (i.e. don't use <em>any</em> )</li>
+                            <li>When using overloads, try to keep your implementation’s signature as specific as
+                                possible to make it easier to implement the function (i.e. don't use <em>any</em> )</li>
                         </ul>
-                        
+
 
                     </div>
                 </div>
@@ -234,13 +265,17 @@
                     <h2 class="mb-4">Typescript Modules</h2>
                     <div class="bg-white border rounded-5 p-4">
                         <h4 class="mt-5">Modules in Javascript</h4>
-                        <p>We have been using Javascripts ES Modules format to handle modules using the <code>import/export</code> syntax</p>
+                        <p>We have been using Javascripts ES Modules format to handle modules using the
+                            <code>import/export</code> syntax</p>
                         <ul>
-                            <li>In TypeScript any file containing a top-level import or export is considered a module</li>
-                            <li>You can make TypeScript treat a file as a module by adding <code>export {};</code> to it</li>
-                            <li>TypeScript adds the ability to import and export types on top of ES Modules functionality</li>
+                            <li>In TypeScript any file containing a top-level import or export is considered a module
+                            </li>
+                            <li>You can make TypeScript treat a file as a module by adding <code>export {};</code> to it
+                            </li>
+                            <li>TypeScript adds the ability to import and export types on top of ES Modules
+                                functionality</li>
                         </ul>
-<pre><code  class="language-javascript">
+                        <pre><code  class="language-javascript">
     // @filename: animal.ts
     export type Cat = { breed: string; yearOfBirth: number };
     export type Dog = { breeds: string[]; yearOfBirth: number };
@@ -251,83 +286,119 @@
     import { type Bird } from "./animal.js";        //inline type import
 
 </code></pre>
-                    </div>
+                <h4 class="mt-5 mb-3">Using ES6 modules in the browser</h4>
+                <p>The default resolution strategy set in the tsconfig is Node - which uses <code>CommonJs</code> for module resolution.</p>
+                <p>To use the ES6 syntax of Import / Export with Typescript, first define your module type to es6 in the tsconfig</p>
+                <p>Also make sure to import your main js file in the index.html with <code class="language-html">type="module"</code> set</p>
+                <pre>
+                    <code class="language-json">
+    // tsconfig.json
+    {
+        "compilerOptions": {                             
+            "module": "es6"  // Tells typsecript to use the classic resolution strategy                                   
+         }
+    }   </code>
+                    <code class="language-html">
+    &lt!-- index.html -->
+    &ltscript src="main.js" type="module">&lt/script></code>
+    <code class="language-javascript">
+    // main.ts
+    import Example from './example.js'  </code>
+                </pre>   
+                <p class="mt-4">Note that the import file <code>example.js</code> references the javascript version, not the typescript</p>     
+                <p>By importing Example without brackets, we are assuming it is the default import. Brackets are necessary for any exports that are not default</p>
+            </div>
                 </div>
             </div>
         </div>
     </main>
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5 pt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-4 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Useful Resources
-            </h6>
-            <p>
-              Most of the information in this tutorial site was taken from 3 sources listed to the right. This was supplimented with information found in StackOverflow answers as well as blogs found during specific Google searches.
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
-            <p>
-              <a href="https://www.typescriptlang.org/docs/handbook/2/modules.html" class="text-reset">The TypeScript Handbook</a>
-            </p>
-            <p>
-              <a href="https://www.oreilly.com/library/view/programming-typescript/9781492037644/ch04.html" class="text-reset">Programming Typescript</a>
-            </p>
-            <p>
-              <a href="https://www.tutorialspoint.com/typescript/typescript_modules.htm" class="text-reset">Learn TypeScript</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Contact
-            </h6>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              <a href="mailto:CFaggard@TalentPath.com" class="text-reset">CFaggard@TalentPath.com</a>
-            </p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              <a href="mailto:JThomas@TalentPath.com" class="text-reset">JThomas@TalentPath.com</a>
-            </p>
-          </div>
-          <!-- Grid column -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5 pt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Useful Resources
+                        </h6>
+                        <p>
+                            Most of the information in this tutorial site was taken from 3 sources listed to the right.
+                            This was supplimented with information found in StackOverflow answers as well as blogs found
+                            during specific Google searches.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.typescriptlang.org/docs/handbook/2/modules.html" 
+                                target="_blank"
+                                class="text-reset">
+                                The TypeScript Handbook</a>
+                        </p>
+                        <p>
+                            <a href="https://www.oreilly.com/library/view/programming-typescript/9781492037644/ch04.html"
+                                target="_blank"
+                                class="text-reset">Programming Typescript</a>
+                        </p>
+                        <p>
+                            <a href="https://www.tutorialspoint.com/typescript/typescript_modules.htm" 
+                                target="_blank"
+                                class="text-reset">Learn TypeScript</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <!-- **Note: Having emails in plaintext is not safe since web scrapers will pick them up and spam you with junk -->
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:CFaggard@TalentPath.com" class="text-reset">CFaggard@TalentPath.com</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:JThomas@TalentPath.com" class="text-reset">JThomas@TalentPath.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);">
+            Made with <span class="heart">♥</span> by Chase &amp; Jacob
         </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-4 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);">
-        Made with <span class="heart">♥</span> by Chase &amp; Jacob
-      </div>
-  </footer>
-  <!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-core.min.js" integrity="sha512-TbHaMJHEmRBDf9W3P7VcRGwEmVEJu7MO6roAE0C4yqoNHeIVo3otIX3zj1DOLtn7YCD+U8Oy1T9eMtG/M9lxRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-core.min.js"
+        integrity="sha512-TbHaMJHEmRBDf9W3P7VcRGwEmVEJu7MO6roAE0C4yqoNHeIVo3otIX3zj1DOLtn7YCD+U8Oy1T9eMtG/M9lxRw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js"
+        integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 </body>
+
 </html>
