@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+:root{
+    --orange: #FD7F20;
+}
 .navbar-brand{
     font-family: 'Smooch', cursive;
     font-size: 33px;
@@ -12,15 +15,15 @@ main{
 pre.language-javascript {
     padding-top: 0;
 }
-
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: #FD7F20;
+    background-color: var(--orange);
+}
+.heart{
+    color: var(--orange);
 }
 @media screen and (min-width: 900px) {
     .container {
-        background: rgba(256, 256, 256, .5);
         margin-top: 20px;
         padding: 10px 20px;
-        border-radius: 5px;
     }
 }
