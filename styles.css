@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+.navbar-brand{
+    font-family: 'Smooch', cursive;
+    font-size: 33px;
+}
+.navbar-brand img{
+    max-width: 50px;
+}
 main{
     padding-top: 90px;
 }
+pre.language-javascript {
+    padding-top: 0;
+}
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #FD7F20;
+}
 @media screen and (min-width: 900px) {
     .container {
         background: rgba(256, 256, 256, .5);
